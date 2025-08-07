@@ -1,0 +1,78 @@
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #561208;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 400px;
+  width: 90%;
+}
+.card {
+  background: #ba8585;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border 0.3s ease;
+}
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.strength-meter {
+  height: 10px;
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.strength-meter-fill {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+.feedback {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Strength Colors */
+.weak {
+  background: #e63946;
+}
+.medium {
+  background: #f4a261;
+}
+.strong {
+  background: #2a9d8f;
+}
+.very-strong {
+  background: #264653;
+}
